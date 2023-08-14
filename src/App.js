@@ -16,13 +16,22 @@ function App() {
         {/* <Navbar /> */}
 
         <Routes>
-          <Route index element={<Authentication />} />
+          <Route index element={<CourseList />} />
           <Route path="/" element={<Registration/>}> </Route>
            <Route path="/" element={<Login />}></Route>
           <Route path="/courseList" element={<CourseList />} />
           <Route path="/addCourse" element={<AddCourse />} />
           <Route path="/editCourse/:id" element={<UpdateCourse />} />
         </Routes>
+
+        {/* <Routes>
+          <Route index element={<Authentication />} />
+          <Route path="/" element={<Registration/>}> </Route>
+           <Route path="/" element={<Login />}></Route>
+          <Route path="/courseList" element={<CourseList />} />
+          <Route path="/addCourse" element={<AddCourse />} />
+          <Route path="/editCourse/:id" element={<UpdateCourse />} />
+        </Routes> */}
       </BrowserRouter>
     </>
   );

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const COURSE_API_BASE_URL = "http://localhost:9090/api/v1/courses";
+const COURSE_API_BASE_URL = "http://localhost:9070/api/v1/courses";
 
 class CourseServices {
   saveCourse(course) {

@@ -69,7 +69,8 @@ const CourseList = () => {
           </thead>
           {!loading && (
             <tbody className="bg-white">
-              {course.map((course) => (
+              {console.log(course)}
+              {course&&course.map((course) => (
                 <Courses
                   course={course}
                   deleteCourse={deleteCourse}
